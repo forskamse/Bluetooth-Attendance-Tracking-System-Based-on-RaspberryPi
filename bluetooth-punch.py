@@ -15,7 +15,7 @@ a=[]
 b=[]
 tempFlag = 0
 # Avoid repeated punches due to a short-lived abnormality of the Raspberry Pi or this program(such as a short power off)
-df = pd.read_csv('/home/pi/projects/punch-in_and_punch-out_data.csv')
+df = pd.read_csv('~/RaspberryPi-Bluetooth-Punch-System/punch-in_and_punch-out_data.csv')
 last_punchFlag = df.iat[-1,0]
 last_punchTime = df.iat[-1,1]
 last_punchDatetime = datetime.strptime(last_punchTime, '%Y-%m-%d %H:%M:%S')
@@ -67,7 +67,7 @@ while True:
 	# but if you return in 10 minutes, from the view of this program, nothing happens.
 	elif myPhone in activeDevs and tempFlag == 1:
 		tempFlag = 0
-		df = pd.read_csv('/home/pi/projects/punch-in_and_punch-out_data.csv')
+		df = pd.read_csv('~/RaspberryPi-Bluetooth-Punch-System/punch-in_and_punch-out_data.csv')
 		last_punchTime = df.iat[-1,1]
 		last_punchDatetime = datetime.strptime(last_punchTime, '%Y-%m-%d %H:%M:%S')
 		b = []
