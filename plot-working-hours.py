@@ -9,7 +9,7 @@ oneday=datetime.timedelta(days=1)
 yesterday=today-oneday
 month = ("%s-%s" % (yesterday.year,yesterday.month))
 
-df = pd.read_csv('/home/pi/projects/punch-in_and_punch-out_data.csv')
+df = pd.read_csv('~/RaspberryPi-Bluetooth-Punch-System/punch-in_and_punch-out_data.csv')
 # turn to datetime format
 df['time'] = pd.to_datetime(df['time'])
 # set datetime as index
