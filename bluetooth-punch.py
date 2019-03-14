@@ -1,7 +1,10 @@
 import time
 import pandas as pd
 from bluetooth import *
-from bluetooth.ble import DiscoveryService
+#####################################################################
+############# For Bluetooth Low Energy Device(like band) ############
+# from bluetooth.ble import DiscoveryService
+#####################################################################
 from datetime import datetime, timedelta
 
 
