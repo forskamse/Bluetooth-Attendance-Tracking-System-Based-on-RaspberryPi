@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/pi/projects
-/home/pi/.virtualenvs/bt/bin/python /home/pi/projects/bluetooth-punch.py &
+cd ~/RaspberryPi-Bluetooth-Punch-System/
+python3 ~/RaspberryPi-Bluetooth-Punch-System/bluetooth-punch.py &
