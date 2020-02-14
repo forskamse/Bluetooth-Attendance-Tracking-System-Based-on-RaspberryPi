@@ -153,9 +153,19 @@ sudo nano /etc/rc.local
 ########################################################
 ```
 
+## Running
+```
+cd /path/to/your/Project/
+nohup sudo python3 RPi-Bluetooth-Attendance-Information-Collection-System.py >> RpiAttendance.log &
+```
+
 ## Reference
 https://pimylifeup.com/raspberry-pi-grafana/
+
 https://github.com/grafana/grafana-image-renderer/blob/master/docs/building_from_source.md
+
 https://github.com/grafana/grafana-image-renderer/issues/7
+
 https://grafana.com/docs/grafana/latest/administration/image_rendering/
+
 https://community.openhab.org/t/tutorial-grafana-rendering-on-raspberry-pi/71777
