@@ -59,17 +59,17 @@ sudo pip3 install influxdb apscheduler -i https://pypi.tuna.tsinghua.edu.cn/simp
 ##### Code modification
 - RPi-Bluetooth-Attendance-Information-Collection-System.py
 
-On considering the security, just write [your_db_pwd] into a txt file.
+    On considering the security, just write [your_db_pwd] into a txt file.
 
-Change [your_db_user]. 
+    Change [your_db_user]. 
 
-Select tartgetDevType. Change target device names(targetDevName, data type: list) and target device addresses(targetDevAddrs, data type: list). By far, 'Bluetooth' and 'BLE' are not supported at the mean time. But it's very easy to implement based on current codes. If it's necessary for you, you may have a try.
+    Select tartgetDevType. Change target device names(targetDevName, data type: list) and target device addresses(targetDevAddrs, data type: list). By far, 'Bluetooth' and 'BLE' are not supported at the mean time. But it's very easy to implement based on current codes. If it's necessary for you, you may have a try.
 
-Set triggers individually for each target device name if necessary.
+    Set triggers individually for each target device name if necessary.
 
 - start-when-power-on.sh
 
-Change /path/to/your/Project
+    Change /path/to/your/Project.
 
 ##### InfluxDB configuration
 ```
