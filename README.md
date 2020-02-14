@@ -8,12 +8,12 @@ Daily report is also supported.
 ## Installation
 
 
-##### Clone the repository
+#### 1. Clone the repository
 ```
 cd ~
 git clone https://github.com/forskamse/RPi-Bluetooth-Attendance-Information-Collection-System.git
 ```
-##### System dependencies
+#### 2. System dependencies
 ```
 [Hardware: Raspberry Pi 4 - 4G RAM Version]
 [OS: Raspbian GNU/Linux 10 (buster)]
@@ -48,7 +48,7 @@ cp /usr/bin/chromium-browser /var/lib/grafana/plugins/grafana-image-renderer/nod
 cd ~
 ```
 
-##### Python dependencies
+#### 3. Python dependencies
 Since BLE scanning requires system permission, using system python3 environment is highly recommended. Otherwise you might suffer from some issues on module searching when running the code with sudo permission.
 ```
 sudo pip3 install influxdb apscheduler -i https://pypi.tuna.tsinghua.edu.cn/simple/
@@ -56,7 +56,7 @@ sudo pip3 install influxdb apscheduler -i https://pypi.tuna.tsinghua.edu.cn/simp
 
 ## Configuration
 
-##### Code modification
+#### 1. Code modification
 - RPi-Bluetooth-Attendance-Information-Collection-System.py
 
     On considering the security, just write [your_db_pwd] into a txt file.
@@ -71,7 +71,7 @@ sudo pip3 install influxdb apscheduler -i https://pypi.tuna.tsinghua.edu.cn/simp
 
     Change /path/to/your/Project.
 
-##### InfluxDB configuration
+#### 2. InfluxDB configuration
 ```
 sudo systemctl unmask influxdb.service
 sudo systemctl enable influxdb
@@ -83,7 +83,7 @@ CREATE USER [your_db_user] WITH PASSWORD [your_db_pwd] WITH ALL PRIVILEGES
 CREATE DATABASE attendanceInformation
 ```
 
-##### Grafana configuration
+#### 3. Grafana configuration
 
 ```
 ## Start grafana-image-renderer server in the background
@@ -144,12 +144,13 @@ Set up notification channels:
 
 Here 'Include image' determines whether to send a rendered image or not. 'Disable Resolve Message' prevents from sending another [OK] alerting email once the former alerting situation was resolved.
 
-##### Boot from power on
+#### 4. Boot from power on
 ```
 ## Add configuration before "exit 0"
 sudo nano /etc/rc.local
-#######################################
+########################################################
 /bin/bash /path/to/your/Project/start-when-power-on.sh
+########################################################
 ```
 
 ## Reference
