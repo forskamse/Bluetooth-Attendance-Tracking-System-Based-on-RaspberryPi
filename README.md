@@ -129,14 +129,17 @@ Set up query rules:
 ![Example of a query rule](imgs/example_of_query_rule.png)
 
 Some additional query settins help with data observability and default image rendering time range:
+
 ![Additional query settins](imgs/queries_settings.png)
 
 Set up alert rules:
+
 ![Example of an alert rule](imgs/example_of_alert_rule.png)
 
 'Evaluate every' determines the intervals when the rule is evaluated. 'For' determines the pending duration after the alert rule was triggered.
 
 Set up notification channels:
+
 ![Notification channel settings](imgs/notification_channel_settings.png)
 
 Here 'Include image' determines whether to send a rendered image or not. 'Disable Resolve Message' prevents from sending another [OK] alerting email once the former alerting situation was resolved.
