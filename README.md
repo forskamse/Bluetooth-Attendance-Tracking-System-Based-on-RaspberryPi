@@ -1,7 +1,7 @@
 # RPi Bluetooth Attendance Information Collection System
 
-This system helps collect attendance information in a non-inductive way by scanning the nearby bluetooth or BLE device using Raspberry Pi.    
-The system stores information in InfluxDB and make the information observable via Grafana.    
+This system helps collect attendance information in a non-inductive way by scanning the nearby Bluetooth or BLE device using Raspberry Pi.    
+The system stores information in InfluxDB and makes the information observable via Grafana.    
 Daily report is also supported.
 
 
