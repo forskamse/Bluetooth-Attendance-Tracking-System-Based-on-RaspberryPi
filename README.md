@@ -65,13 +65,14 @@ sudo pip3 install influxdb apscheduler -i https://pypi.tuna.tsinghua.edu.cn/simp
 
     Change [your_db_user]. 
 
-    Select tartgetDevType. Change target device names(targetDevName, data type: list) and target device addresses(targetDevAddrs, data type: list). By far, 'Bluetooth' and 'BLE' are not supported at the mean time. But it's very easy to implement based on current codes. If it's necessary for you, you may have a try.
+    Change target device names(targetDevName, data type: list) and target device addresses(targetDevAddrs, data type: list). You can put both 'Bluetooth' and 'BLE' device addresses in targetDevAddrs.
 
-    Set triggers individually for each target device name if necessary.
+    Set triggers individually for each target device name if necessary. As a reminder, you should check whether your machine time and local time are consistant.
 
 - start-when-power-on.sh
 
     Change /path/to/your/Project.
+
 
 #### 2. InfluxDB configuration
 ```
