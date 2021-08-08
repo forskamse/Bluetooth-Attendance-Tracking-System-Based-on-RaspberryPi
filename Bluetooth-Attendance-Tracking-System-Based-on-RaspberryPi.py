@@ -1,15 +1,28 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :   Bluetooth-Attendance-Tracking-System-Based-on-RaspberryPi.py
+@Time    :   2020/02/15 01:01:47
+@Author  :   Forskamse
+@Version :   2.0
+@Contact :   forskamse@gmail.com
+@License :   (C)Copyright 2019-2021, UM, SKL-IOTSC, MACAU, CHINA
+@Desc    :   None
+@Ref     :   None
+'''
 
 import os
 import time
+import logging
 import datetime
-from apscheduler.schedulers.background import BackgroundScheduler
 import subprocess
+import requests.exceptions
+from apscheduler.schedulers.background import BackgroundScheduler
 from bluetooth import discover_devices
 from influxdb import InfluxDBClient
-import requests.exceptions
-import logging
 
-logger = logging.getLogger("RPi Bluetooth Attendance Information Collection System")
+
+logger = logging.getLogger("Bluetooth Attendance Tracking System Based on RaspberryPi")
 # logging.basicConfig(level = logging.DEBUG,format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
